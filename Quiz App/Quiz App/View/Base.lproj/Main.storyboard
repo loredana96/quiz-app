@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI2-k3-sDV">
+                                <rect key="frame" x="20" y="164" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="adB-wH-lha"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R87-TY-hf3">
+                                <rect key="frame" x="40" y="474" width="150" height="60"/>
+                                <color key="backgroundColor" red="0.59653065849999998" green="0.92613189500000004" blue="0.62295471039999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Bf7-dj-o31"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Y3K-Yi-w1Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="True">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QTS-IQ-p7D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzC-uv-ZWP">
+                                <rect key="frame" x="224" y="474" width="150" height="60"/>
+                                <color key="backgroundColor" red="0.9192116857" green="0.41765322302766911" blue="0.1645992615978146" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="3bH-rI-Wwm"/>
+                                    <constraint firstAttribute="height" constant="60" id="fG5-E7-xya"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A64-89-XSg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbH-dZ-Lo2">
+                                <rect key="frame" x="20" y="767" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FIi-WR-ljJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="TlM-8G-mkn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpZ-QQ-xpx">
+                                <rect key="frame" x="294" y="767" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6fQ-1I-MMV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="fe6-A4-u4B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="hw3-Av-g3s">
+                                <rect key="frame" x="40" y="817" width="334" height="30"/>
+                                <color key="backgroundColor" red="0.9192116857" green="0.3213318631" blue="0.099674071599999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="shz-zG-iYP"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64960276490000002" green="0.71740416409999996" blue="0.70043018059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YpZ-QQ-xpx" secondAttribute="trailing" constant="20" id="3tk-hN-dMI"/>
+                            <constraint firstItem="GbH-dZ-Lo2" firstAttribute="top" secondItem="R87-TY-hf3" secondAttribute="bottom" constant="233" id="8sv-cB-bBq"/>
+                            <constraint firstItem="YpZ-QQ-xpx" firstAttribute="top" secondItem="zzC-uv-ZWP" secondAttribute="bottom" constant="233" id="Adk-FK-6mi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hw3-Av-g3s" secondAttribute="trailing" constant="20" id="FFE-fJ-wuR"/>
+                            <constraint firstItem="zzC-uv-ZWP" firstAttribute="leading" secondItem="R87-TY-hf3" secondAttribute="trailing" constant="34" id="JS4-KC-oES"/>
+                            <constraint firstItem="YpZ-QQ-xpx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GbH-dZ-Lo2" secondAttribute="trailing" constant="8" symbolic="YES" id="MpM-Al-mdD"/>
+                            <constraint firstItem="mI2-k3-sDV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="QvN-xg-7da"/>
+                            <constraint firstItem="R87-TY-hf3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Uqg-lR-Iul"/>
+                            <constraint firstItem="hw3-Av-g3s" firstAttribute="top" secondItem="GbH-dZ-Lo2" secondAttribute="bottom" constant="20" id="V8v-5Q-ah8"/>
+                            <constraint firstItem="R87-TY-hf3" firstAttribute="top" secondItem="mI2-k3-sDV" secondAttribute="bottom" constant="110" id="Wgc-YE-zhb"/>
+                            <constraint firstItem="hw3-Av-g3s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="b8m-Vf-5AA"/>
+                            <constraint firstItem="GbH-dZ-Lo2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gAE-0F-lLV"/>
+                            <constraint firstItem="zzC-uv-ZWP" firstAttribute="top" secondItem="mI2-k3-sDV" secondAttribute="bottom" constant="110" id="jWr-xM-YGw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zzC-uv-ZWP" secondAttribute="trailing" constant="40" id="jnV-Fx-nNg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mI2-k3-sDV" secondAttribute="trailing" constant="20" id="kXY-ZK-4l0"/>
+                            <constraint firstItem="mI2-k3-sDV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="prw-PN-8QU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressBar" destination="hw3-Av-g3s" id="NtY-pF-uQl"/>
+                        <outlet property="progressLabel" destination="GbH-dZ-Lo2" id="bum-Rg-qAY"/>
+                        <outlet property="questionLabel" destination="mI2-k3-sDV" id="B4W-Jv-Y1G"/>
+                        <outlet property="scoreLabel" destination="YpZ-QQ-xpx" id="PZW-Tw-4lL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="94"/>
+        </scene>
+    </scenes>
+</document>
